@@ -1,0 +1,45 @@
+{{#extend "stylesheets"}}
+<link rel="stylesheet" href="/libs/bootstrapvalidator/dist/css/bootstrapValidator.min.css"/>
+<link rel="stylesheet" href="/libs/google-code-prettify/bin/prettify.min.css"/>
+<link rel="stylesheet" href="/libs/highlight/styles/default.css"/>
+{{/extend}}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div method="post" action="/admin/article" class="form-horizontal editArticle">
+                <div class="form-group">
+                    <lable for="inputTitle" class="col-sm-2 control-lable">文章标题</lable>
+                    <div class="col-sm-10">
+                        <input id="inputTitle" type="text" name="inputTitle" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <lable for="inputContent" class="col-sm-2 control-lable">内容</lable>
+                    <div class="col-sm-10" id="epiceditor">
+
+                       <textarea class="form-control" rows="10"  id="my-edit-area" name="my-edit-area" value="my-edit-area"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10"></div>
+                    <button type="submit" class="btn btn-default btn_submitArticle">录入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#extend "scripts"}}
+
+<script src="/libs/epicEditor/0.2.2/js/epiceditor.js"></script>
+<script src="/libs/google-code-prettify/bin/prettify.min.js"></script>
+<script src="/libs/highlight/highlight.pack.js"></script>
+<script src="/libs/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+<script src="/js/main/editArticle.js"></script>
+
+{{/extend}}
+
+
+
+

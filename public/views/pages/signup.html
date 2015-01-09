@@ -1,0 +1,43 @@
+{{#extend "stylesheets"}}
+<link rel="stylesheet" href="/css/signin.css"/>
+<link rel="stylesheet" href="/libs/bootstrapvalidator/dist/css/bootstrapValidator.min.css"/>
+{{/extend}}
+<div class="container">
+    <div class="row">
+        <form class="col-lg-5 col-md-5 col-sm-5 col-xs-8 loginContainer">
+            <div class="loginSubContainer">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="signinName">用户名</label>
+                        <input id="signinName" name="username" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="signinPassword">密码</label>
+                        <input id="signinPassword" name="password" type="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">确认密码</label>
+                        <input id="confirmPassword" name="confirmPassword" type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn_submit">注册</button>
+                    <a type="button" data-dismiss="modal" class="btn btn-primary" href="/">取消</a>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+{{#extend "scripts"}}
+<script src="/js/main/signup.js"></script>
+<script src="/libs/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+{{/extend}}
+
+
+
+
+
+

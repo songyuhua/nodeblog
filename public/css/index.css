@@ -1,0 +1,85 @@
+html,body,.mainContainer,.mainContainer .row,.sideImgBar{height:100%;}
+body{
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background-color:#f6f5ec;
+}
+
+a:hover,a:focus {
+    color: #2a6496;
+    text-decoration: none;
+}
+
+/* Hide for mobile, show later */
+.sideImgBar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .sideImgBar {
+        /*position: fixed;*/
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        background-color: #84bf96;
+        /*padding: 20px;*/
+        overflow-x: hidden;
+        overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
+        /*background-color: #f5f5f5;*/
+        /*border-right: 1px solid #eee;*/
+    }
+}
+
+.contentContainer{padding-left:40px;padding-top:20px;}
+
+.index_title{
+    display: inherit;
+    color: #3b3b3b;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px
+}
+
+ul.article_list{
+    list-style:none;
+}
+
+.index_title{
+    cursor: pointer;
+}
+
+/*指向头像的箭头*/
+.arrowToImage{
+    height:60px;
+    width:60px;
+    transform:rotate(45deg);
+    -wbbkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    /*border:1px solid red;*/
+    position: absolute;
+    right:-30px;
+    top:100px;
+    background-color: #f6f5ec;
+}
+
+.avatar{
+    height:100px;width:100px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    border:5px solid #009ad6;
+    background-color: #ffffff;
+    position: absolute;
+    top:80px;
+    right:50px;
+    background: url("../images/张子凡5.png") no-repeat;
+    background-size: cover;
+}
+
+
+/*编辑页面*/
+#epiceditor{height:500px;}
+.editArticle{
+    margin-top: 10px;
+}

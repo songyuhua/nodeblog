@@ -1,0 +1,38 @@
+{{#extend "stylesheets"}}
+
+<link rel="stylesheet" href="/libs/google-code-prettify/bin/prettify.min.css"/>
+<link rel="stylesheet" href="/libs/highlight/styles/default.css"/>
+{{/extend}}
+<div class="container-fluid mainContainer">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 sideImgBar">
+            <div class="arrowToImage"></div>
+            <div class="avatar"></div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-8 contentContainer">
+            <ul class="article_list">
+                <li>
+                    {{#each articles}}
+                <a class="index_title" href="/article/{{_id}}">{{title}}</a>
+                    <p>更新时间{{#datetimeFormat meta.updateAt format="YYYY-MM-DD HH:mm:ss"}}{{/datetimeFormat}} 标签：{{tags}}  分类：{{category}}<br/>
+
+                    </p>
+                    {{/each}}
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+{{#extend "scripts"}}
+<script src="/js/main/editArticle.js"></script>
+<script src="/libs/epicEditor/0.2.2/js/epiceditor.js"></script>
+<script src="/libs/google-code-prettify/bin/prettify.min.js"></script>
+<script src="/libs/highlight/highlight.pack.js"></script>
+{{/extend}}
+
+
+
+

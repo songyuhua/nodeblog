@@ -1,0 +1,19 @@
+{
+  "name": "syh博客",
+  "version": "0.0.0",
+  "description": "'node demo 博客'",
+  "keywords": [
+    "syh blog"
+  ],
+  "authors": [
+    "syh"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1",
+    "bootstrapvalidator": "~0.5.3",
+    "google-code-prettify": "~1.0.3"
+  }
+}

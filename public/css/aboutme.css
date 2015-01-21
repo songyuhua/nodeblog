@@ -1,0 +1,9 @@
+.personalPhoto{
+    background: url("../images/aboutme.jpeg") no-repeat 50% 50%;
+    background-size: 29% 70%;
+    height:400px;
+}
+
+.container p{
+    font-size: 24px;
+}

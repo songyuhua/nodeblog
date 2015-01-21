@@ -13,7 +13,7 @@ var cookieParser = require('cookie-parser');
 //
 require("./config/registerTemplate");
 //
-var port = process.env.PORT || 18080;
+var port = process.env.PORT || 3000;
 var path = require('path');
 //
 var app = express();

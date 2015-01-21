@@ -11,6 +11,10 @@ $(function () {
     var loginOffset = {
         left:(windowWidth - loginWidth) / 2,
         top:(windowHeight - loginHeight) / 2
+    };
+
+    if(loginOffset.top < 183){
+        loginOffset.top = 190;
     }
     $('.loginContainer').offset(loginOffset);
 
@@ -73,7 +77,6 @@ $(function () {
                         alert("不存在该用户");
                     },
                     200: function () {
-                        alert("登陆成功");
                         window.location.href='/';
                     }
                 },

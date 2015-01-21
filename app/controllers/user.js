@@ -3,7 +3,6 @@ var User = require('../models/user');
 
 exports.showSignUp = function(req,res){
     res.render('signup',{
-        title:'注册页面'
     });
 };
 exports.signup = function (req, res) {
@@ -35,7 +34,6 @@ exports.signup = function (req, res) {
 
 exports.showSignIn = function(req,res){
     res.render('signin',{
-        title:'登陆页面'
     });
 };
 exports.signin = function (req, res) {

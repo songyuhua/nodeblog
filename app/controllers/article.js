@@ -14,6 +14,12 @@ exports.index = function (req, res) {
 
 };
 
+exports.aboutme = function (req, res) {
+    res.render('aboutme', {
+    });
+
+};
+
 exports.detail = function (req, res) {
     var id = req.params.id;
     ArticleModel.findById(id, function (err, article) {

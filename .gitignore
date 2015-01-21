@@ -2,3 +2,4 @@ bower_components/
 public/libs/
 node_modules/
 .idea/
+/public/views/pages/upload.html

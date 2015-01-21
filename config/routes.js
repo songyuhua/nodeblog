@@ -28,6 +28,8 @@ module.exports = function (app) {
         res.render('upload');
     });
 
+    app.get('/aboutme',Article.aboutme);
+
     //User
     app.post('/user/signup', User.signup);
     app.post('/user/signin', User.signin);

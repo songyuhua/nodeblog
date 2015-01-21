@@ -12,6 +12,11 @@ $(function () {
         left: (windowWidth - loginWidth) / 2,
         top: (windowHeight - loginHeight) / 2
     }
+
+    if(loginOffset.top < 154){
+        loginOffset.top = 160;
+    }
+
     $('.loginContainer').offset(loginOffset);
 
     $('.loginContainer').bootstrapValidator({
@@ -26,8 +31,7 @@ $(function () {
                 message: 'The username is not valid',
                 validators: {
                     notEmpty: {
-                        message: '用户名不能为空'
-                    },
+                        message: '用户名不能为空'                    },
                     stringLength: {
                         min: 3,
                         max: 30,
@@ -85,7 +89,6 @@ $(function () {
                         alert(tip);
                     },
                     200:function(tip){
-                        alert('注册成功,请到登陆页进行登录');
                         window.location.href = '/signin';
                     }
                 },
